@@ -1,0 +1,4 @@
+github "Alamofire/Alamofire" "4.3.0"
+github "Alamofire/AlamofireImage" "3.2.0"
+github "SwiftyJSON/SwiftyJSON" "3.1.4"
+github "daltoniam/Starscream" "2.0.3"
