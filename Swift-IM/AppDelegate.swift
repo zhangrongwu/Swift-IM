@@ -22,9 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         let ceshi = SESocketManager.instance
        
-//        ceshi.getReconncetHandle { (status) ->() in
-//            print(status)
-//        }
+
         return true
     }
 

@@ -1,6 +1,12 @@
 # **swift socket**
 ####基于CocoaAsyncSocket封装即时通讯模块
 ####具体问题需根据公司具体业务逻辑进行设计
+####主要功能
+* 建立连接
+* 心跳请求
+* 断开重连机制
+* 请求重发机制
+* 请求超时策略
 
 ##### 1.创建长连接
     func creatSocketToConnectServer() -> Void {

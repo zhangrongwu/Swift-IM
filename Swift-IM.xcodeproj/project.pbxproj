@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		420BF23E1E6963AD000C189B /* SERequestPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420BF23D1E6963AD000C189B /* SERequestPackage.swift */; };
 		4240EFE61E669198005A2EF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4240EFE51E669198005A2EF9 /* AppDelegate.swift */; };
 		4240EFED1E669198005A2EF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4240EFEC1E669198005A2EF9 /* Assets.xcassets */; };
 		4240EFFB1E669198005A2EF9 /* Swift_IMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4240EFFA1E669198005A2EF9 /* Swift_IMTests.swift */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		0F78A3B9579B274444D895BC /* Pods-Swift-IM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-IM.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swift-IM/Pods-Swift-IM.release.xcconfig"; sourceTree = "<group>"; };
+		420BF23D1E6963AD000C189B /* SERequestPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SERequestPackage.swift; sourceTree = "<group>"; };
 		4240EFE21E669198005A2EF9 /* Swift-IM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-IM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4240EFE51E669198005A2EF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4240EFEC1E669198005A2EF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				4240F0251E669247005A2EF9 /* SNScoketConfig.swift */,
+				420BF23D1E6963AD000C189B /* SERequestPackage.swift */,
 				4240F0261E669247005A2EF9 /* SESocketRequestBaseManager.swift */,
 				4240F0271E669247005A2EF9 /* SESocketCommManager.swift */,
 				4240F0281E669247005A2EF9 /* SESocketManager.swift */,
@@ -510,6 +513,7 @@
 				4240EFE61E669198005A2EF9 /* AppDelegate.swift in Sources */,
 				4240F0361E669247005A2EF9 /* SESocketManager.swift in Sources */,
 				4240F0331E669247005A2EF9 /* SNScoketConfig.swift in Sources */,
+				420BF23E1E6963AD000C189B /* SERequestPackage.swift in Sources */,
 				4240F0341E669247005A2EF9 /* SESocketRequestBaseManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
