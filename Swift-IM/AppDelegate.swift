@@ -21,6 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
         let ceshi = SESocketManager.instance
+       
+//        ceshi.getReconncetHandle { (status) ->() in
+//            print(status)
+//        }
         return true
     }
 
