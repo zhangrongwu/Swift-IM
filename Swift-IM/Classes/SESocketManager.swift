@@ -7,9 +7,10 @@
 //  项目与框架连接模块
 
 import UIKit
-import Starscream
 import Alamofire
-class SESocketManager: NSObject, WebSocketDelegate {
+import SocketIO
+
+class SESocketManager: NSObject {
     
     static let instance = SESocketManager()
     
@@ -17,46 +18,34 @@ class SESocketManager: NSObject, WebSocketDelegate {
     
     var  beatTimer:Timer!
     
-    let socket = WebSocket(url: URL(string: "www://"+kConnectorHost+":"+kConnectorPort+"/")!, protocols: [])
+    let socket = SocketIOClient(socketURL: URL(string: kConnectorHost+":"+kConnectorPort)!, config: [.log(true), .forcePolling(true)])
+    
     
     override init() {
         super.init()
         
-        socket.delegate = self
         socket.connect()
         connectStatus = -0
+      
+        socket.connect(timeoutAfter: timeOut) {
+            print("reconnect")
+            self.socket.reconnect()
+        }
+        
+        socket.reconnects = true
+        socket.reconnectWait = 5
+        
+        
+        self.socket.on("currentAmount")  {data, ack in
+            print(" --- socket connected")
+        }
         
     }
     
 }
 // socket delegate
 extension SESocketManager {
-    func websocketDidConnect(socket: WebSocket) {
-        connectStatus = 1
-        beatTimer = Timer.scheduledTimer(timeInterval: TimeInterval(heartBeatTimeinterval),
-                                         target: self,
-                                         selector: #selector(sendBeat),
-                                         userInfo: nil,
-                                         repeats: true)
-        
-        print("websocket is connected")
-    }
-    
-    func websocketDidDisconnect(socket: WebSocket, error: NSError?) {
-        if let e = error {
-            print("websocket is disconnected: \(e.localizedDescription)")
-        } else {
-            print("websocket disconnected")
-        }
-    }
-    
-    func websocketDidReceiveMessage(socket: WebSocket, text: String) {
-        print("Received text: \(text)")
-    }
-    
-    func websocketDidReceiveData(socket: WebSocket, data: Data) {
-        print("Received data: \(data.count)")
-    }
+   
 }
 
 
@@ -67,12 +56,15 @@ extension SESocketManager {
     }
     
     func sendSocketParams(param: Any) {
-        
         let data:Data = NSKeyedArchiver.archivedData(withRootObject: param)
-        
-        socket.write(data: data) {
-            
+        self.socket.on("currentAmount")  {data, ack in
+            print("socket connected")
         }
+        self.socket.emitWithAck("sock", data)
+        
+//        socket.write(data: data) {
+        
+//        }
     }
     
 }

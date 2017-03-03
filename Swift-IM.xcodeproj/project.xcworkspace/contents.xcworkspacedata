@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:SmartEnterprise.xcodeproj">
+      location = "self:Swift-IM.xcodeproj">
    </FileRef>
 </Workspace>

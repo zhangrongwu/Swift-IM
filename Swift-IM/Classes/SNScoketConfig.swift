@@ -10,6 +10,8 @@ import Foundation
 let heartBeatTimeinterval = 40
 let kMaxReconnection_time = 6
 let beatLimit = 10
+let timeOut = 10
+
 
 let kConnectorHost = "183.196.130.125"
 let kConnectorPort = "6101"
