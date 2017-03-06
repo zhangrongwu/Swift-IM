@@ -8,15 +8,16 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>0</integer>
 		</dict>
 		<key>Pods-Swift-IM.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
+		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -26,7 +27,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BE37527E0337D9173177214B47C535EE</key>
+		<key>CE174F473DEAE5310EF6A60D176226A9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E4F9CA0A70A8F45FCAB7D236BD4B14EA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
