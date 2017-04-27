@@ -1,4 +1,0 @@
-github "Alamofire/Alamofire" ~> 4.3
-github "Alamofire/AlamofireImage" ~> 3.1
-github "SwiftyJSON/SwiftyJSON"
-github "robbiehanson/CocoaAsyncSocket" "master"

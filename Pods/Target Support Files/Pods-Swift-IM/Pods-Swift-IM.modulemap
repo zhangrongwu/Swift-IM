@@ -1,6 +1,0 @@
-framework module Pods_Swift_IM {
-  umbrella header "Pods-Swift-IM-umbrella.h"
-
-  export *
-  module * { export * }
-}

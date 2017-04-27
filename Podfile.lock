@@ -1,17 +1,15 @@
 PODS:
-  - CocoaAsyncSocket (7.5.1):
-    - CocoaAsyncSocket/GCD (= 7.5.1)
-  - CocoaAsyncSocket/GCD (7.5.1)
+  - CocoaAsyncSocket (7.6.0)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
-  - CocoaAsyncSocket (~> 7.5.1)
+  - CocoaAsyncSocket
   - SwiftyJSON
 
 SPEC CHECKSUMS:
-  CocoaAsyncSocket: e0a7e93b2ffa411592ff87e58524fbbc9b95b4fa
+  CocoaAsyncSocket: b9d5589f07baf9de8f34cc25abd4fcba28f13805
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 59b30fec88b9a22b60e6ede107ade6969bf8aa8a
+PODFILE CHECKSUM: 54ac78fc6f746ac36f1e69a5f377a68ed91c808f
 
 COCOAPODS: 1.1.1

@@ -4,35 +4,25 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>CocoaAsyncSocket.xcscheme</key>
+		<key>Swift-IMPrj.xcscheme</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-Swift-IMPrj.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>SwiftyJSON.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
+			<key>orderHint</key>
+			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>AC0D2D2B4EE7C873431AB3502859CA60</key>
+		<key>4230DD3C1EB1EBB9005AB3F4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BE3CE99AC36835E34558112685E9DC88</key>
+		<key>4230DD501EB1EBB9005AB3F4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C7310B41AAF20422C6E7DF90FA9FE70C</key>
+		<key>4230DD5B1EB1EBB9005AB3F4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
